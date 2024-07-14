@@ -1,0 +1,337 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e0e0;
+}
+.container {
+   
+    width: 100%;
+    max-width: 1400px;
+    height: 150px;
+    margin: 20px;
+    text-align: center;
+    background-color: #f4b8b8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #e8d0ec;
+    color: rgb(123, 40, 231);
+    border-radius: 5px;
+    border: 1px solid #edb3ff;
+    transition: background-color 0.3s, border 0.3s;
+}
+.custom-file-upload:hover {
+    background-color: #89a2ef;
+    border: 1px solid #557be4;
+}
+#upload-form {
+    margin-bottom: 20px;
+    border: #f27373;
+}
+#image-display {
+    margin-top: 20px;
+}
+#image-display img {
+    margin-top: 65px;
+    max-width: 100%;
+    width: 600px;
+    height: 300px;
+    align-items: flex-start; 
+    border: 2px solid #141212;
+    border-radius: 10px;
+}
+
+div.products{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-items{
+    
+    margin: auto;
+
+}
+.product-items>img{
+    min-width: 600 px ;
+
+}
+
+
+
+   /* Myntra Logo */
+
+   .myntra{
+    margin: 40px auto;
+    max-width:100%;
+    width:320px;
+    height:250px;
+    position: relative;
+  }
+  
+  .myntra div {
+    position: absolute;
+    height:200px;
+    width:65px;
+    border-radius: 50% 50% 50% 50%/63% 63% 37% 37%;
+  }
+  
+  .myntra div:nth-child(1) {
+    left:40px;
+    top:10px;
+    transform:rotate(20deg);
+    background:rgba(157,30,97,0.9);
+    animation: move1 5s ease-in 2s 1 alternate;
+  }
+  .myntra div:nth-child(2) {
+    left:102px;
+    top:10px;
+    transform:rotate(-20deg);
+    background:rgba(241,115,31,0.8);
+    animation: move2 5s ease-in 2s 1 alternate;
+  }
+  .myntra div:nth-child(3) {
+    left:158px;
+    top:10px;
+    transform:rotate(20deg);
+    background:rgba(241,115,31,0.9);
+    animation: move3 5s ease-in 2s 1 alternate;
+  }
+  .myntra div:nth-child(4) {
+    left:220px;
+    top:10px;
+    transform:rotate(-20deg);
+    background:rgba(253,0,206,0.9);
+    animation: move4 5s ease-in 2s 1 alternate;
+  }
+  
+  @keyframes move1 {
+     0%   {
+      left:40px;
+      transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+    
+  }
+  @-webkit-keyframes move1 {
+     0%   {
+      left:40px;
+      -webkit-transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes move2 {
+     0%   {
+      left:102px;
+      transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+  }
+  @-webkit-keyframes move2 {
+     0%   {
+      left:102px;
+      -webkit-transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes move3 {
+     0%   {
+      left:158px;
+      transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+  }
+  @-webkit-keyframes move3 {
+     0%   {
+      left:158px;
+      -webkit-transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes move4 {
+     0%   {
+      left:220px;
+      transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+  }
+  @-webkit-keyframes move4 {
+     0%   {
+      left:220px;
+      -webkit-transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  
+  .myntra{
+    margin: 40px auto;
+    max-width:100%;
+    width:320px;
+    height:250px;
+    position: relative;
+  }
+  
+  .myntra div {
+    position: absolute;
+    height:200px;
+    width:65px;
+    border-radius: 50% 50% 50% 50%/63% 63% 37% 37%;
+  }
+  
+  .myntra div:nth-child(1) {
+    left:40px;
+    top:10px;
+    transform:rotate(20deg);
+    background:rgba(157,30,97,0.9);
+    animation: move1 5s ease-in 2s 1 alternate;
+  }
+  .myntra div:nth-child(2) {
+    left:102px;
+    top:10px;
+    transform:rotate(-20deg);
+    background:rgba(241,115,31,0.8);
+    animation: move2 5s ease-in 2s 1 alternate;
+  }
+  .myntra div:nth-child(3) {
+    left:158px;
+    top:10px;
+    transform:rotate(20deg);
+    background:rgba(241,115,31,0.9);
+    animation: move3 5s ease-in 2s 1 alternate;
+  }
+  .myntra div:nth-child(4) {
+    left:220px;
+    top:10px;
+    transform:rotate(-20deg);
+    background:rgba(253,0,206,0.9);
+    animation: move4 5s ease-in 2s 1 alternate;
+  }
+  
+  @keyframes move1 {
+     0%   {
+      left:40px;
+      transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+    
+  }
+  @-webkit-keyframes move1 {
+     0%   {
+      left:40px;
+      -webkit-transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes move2 {
+     0%   {
+      left:102px;
+      transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+  }
+  @-webkit-keyframes move2 {
+     0%   {
+      left:102px;
+      -webkit-transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes move3 {
+     0%   {
+      left:158px;
+      transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+  }
+  @-webkit-keyframes move3 {
+     0%   {
+      left:158px;
+      -webkit-transform:rotate(20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  @keyframes move4 {
+     0%   {
+      left:220px;
+      transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      transform:rotate(0deg);
+    }
+  }
+  @-webkit-keyframes move4 {
+     0%   {
+      left:220px;
+      -webkit-transform:rotate(-20deg);
+    }
+     50%  {
+      left:160px;
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  
+  

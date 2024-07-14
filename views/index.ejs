@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Image upload</title>
+    <link rel="icon" href="/images/myntra-1.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style/re.css">
+</head>
+
+<body>
+    <div class="myntra">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    <div class="container">
+        <h1>Upload an Image</h1>
+        <form id="upload-form" method="post" action="/upload" enctype="multipart/form-data">
+            <input type="file" id="image-input" accept="image/*" name="file" required hidden>
+            <label for="image-input" class="custom-file-upload">
+                Choose File
+            </label>
+            <br><br>
+            <button type="submit">Upload</button>
+
+        </form>
+        <div class="side" id="image-display">
+            <p>Upload Image.</p>
+        </div>
+    </div>
+
+    <% if(locals.images&& locals.trendIndex) {%>
+
+        
+        <div class="products">
+            <div>
+                <h1>Product Recommendations :</h1>
+             </div>
+            <% var i=0; %>
+            <%images.forEach(element => { %>
+            
+                <div class="product-items">
+                    <img src="<%= element %>" alt="product-item">
+                    <p>Trend Index : <%= trendIndex[i] %> % </p>
+                </div>
+                
+                <% i++; %>
+            <% }); %>
+        </div>
+        
+
+    <% } %>
+
+    <script>
+        document.getElementById('image-input').addEventListener('change', function (event) {
+            const imageDisplay = document.getElementById('image-display');
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    imageDisplay.innerHTML = `<img src="${e.target.result}" alt="Uploaded Image">`;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                imageDisplay.innerHTML = '<p>Upload Image</p>';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
