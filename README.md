@@ -7,4 +7,12 @@ To run the project :
 -> Add a ` uploads ` folder in the ` public ` directory so that the uploaded images could go to this destination.  
   
 ### Landing page :
-![image](https://github.com/user-attachments/assets/e6f312ba-4794-4c18-966c-04c2fb84e163)
+![image](https://github.com/user-attachments/assets/e6f312ba-4794-4c18-966c-04c2fb84e163)  
+### Recreate link :  
+![image](https://github.com/user-attachments/assets/6b495c8d-f759-4b32-81ef-9534d9aacad0)  
+### Uploading image :  
+![image](https://github.com/user-attachments/assets/0d95a4a6-29a4-4c36-a5d4-c59a7633eace)  
+### Recommendations :  
+![image](https://github.com/user-attachments/assets/643f8003-9620-4479-b263-c5d8b9d93aa4)  
+
+
