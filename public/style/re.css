@@ -73,265 +73,113 @@ div.products{
 
 
 
-   /* Myntra Logo */
+ /* Myntra Logo */
 
-   .myntra{
-    margin: 40px auto;
-    max-width:100%;
-    width:320px;
-    height:250px;
-    position: relative;
+.myntra {
+  margin: 40px auto;
+  max-width: 100%;
+  width: 320px;
+  height: 250px;
+  position: relative;
+}
+
+.myntra div {
+  position: absolute;
+  height: 200px;
+  width: 65px;
+  border-radius: 50% 50% 50% 50% / 63% 63% 37% 37%;
+}
+
+.myntra div:nth-child(1) {
+  left: 40px;
+  top: 10px;
+  transform: rotate(20deg);
+  background: rgba(157, 30, 97, 0.9);
+  animation: move1 3.5s linear infinite;
+}
+
+.myntra div:nth-child(2) {
+  left: 102px;
+  top: 10px;
+  transform: rotate(-20deg);
+  background: rgba(241, 115, 31, 0.8);
+  animation: move2 3.5s linear infinite;
+}
+
+.myntra div:nth-child(3) {
+  left: 158px;
+  top: 10px;
+  transform: rotate(20deg);
+  background: rgba(241, 115, 31, 0.9);
+  animation: move3 3.5s linear infinite;
+}
+
+.myntra div:nth-child(4) {
+  left: 220px;
+  top: 10px;
+  transform: rotate(-20deg);
+  background: rgba(253, 0, 206, 0.9);
+  animation: move4 3.5s linear infinite;
+}
+
+@keyframes move1 {
+  0% {
+    left: 40px;
+    transform: rotate(20deg);
   }
-  
-  .myntra div {
-    position: absolute;
-    height:200px;
-    width:65px;
-    border-radius: 50% 50% 50% 50%/63% 63% 37% 37%;
+  50% {
+    left: 160px;
+    transform: rotate(0deg);
   }
-  
-  .myntra div:nth-child(1) {
-    left:40px;
-    top:10px;
-    transform:rotate(20deg);
-    background:rgba(157,30,97,0.9);
-    animation: move1 5s ease-in 2s 1 alternate;
+  100% {
+    left: 40px;
+    transform: rotate(20deg);
   }
-  .myntra div:nth-child(2) {
-    left:102px;
-    top:10px;
-    transform:rotate(-20deg);
-    background:rgba(241,115,31,0.8);
-    animation: move2 5s ease-in 2s 1 alternate;
+}
+
+@keyframes move2 {
+  0% {
+    left: 102px;
+    transform: rotate(-20deg);
   }
-  .myntra div:nth-child(3) {
-    left:158px;
-    top:10px;
-    transform:rotate(20deg);
-    background:rgba(241,115,31,0.9);
-    animation: move3 5s ease-in 2s 1 alternate;
+  50% {
+    left: 160px;
+    transform: rotate(0deg);
   }
-  .myntra div:nth-child(4) {
-    left:220px;
-    top:10px;
-    transform:rotate(-20deg);
-    background:rgba(253,0,206,0.9);
-    animation: move4 5s ease-in 2s 1 alternate;
+  100% {
+    left: 102px;
+    transform: rotate(-20deg);
   }
-  
-  @keyframes move1 {
-     0%   {
-      left:40px;
-      transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
-    
+}
+
+@keyframes move3 {
+  0% {
+    left: 158px;
+    transform: rotate(20deg);
   }
-  @-webkit-keyframes move1 {
-     0%   {
-      left:40px;
-      -webkit-transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
+  50% {
+    left: 160px;
+    transform: rotate(0deg);
   }
-  
-  @keyframes move2 {
-     0%   {
-      left:102px;
-      transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
+  100% {
+    left: 158px;
+    transform: rotate(20deg);
   }
-  @-webkit-keyframes move2 {
-     0%   {
-      left:102px;
-      -webkit-transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
+}
+
+@keyframes move4 {
+  0% {
+    left: 220px;
+    transform: rotate(-20deg);
   }
-  
-  @keyframes move3 {
-     0%   {
-      left:158px;
-      transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
+  50% {
+    left: 160px;
+    transform: rotate(0deg);
   }
-  @-webkit-keyframes move3 {
-     0%   {
-      left:158px;
-      -webkit-transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
+  100% {
+    left: 220px;
+    transform: rotate(-20deg);
   }
-  
-  @keyframes move4 {
-     0%   {
-      left:220px;
-      transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
-  }
-  @-webkit-keyframes move4 {
-     0%   {
-      left:220px;
-      -webkit-transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
-  }
-  
-  
-  .myntra{
-    margin: 40px auto;
-    max-width:100%;
-    width:320px;
-    height:250px;
-    position: relative;
-  }
-  
-  .myntra div {
-    position: absolute;
-    height:200px;
-    width:65px;
-    border-radius: 50% 50% 50% 50%/63% 63% 37% 37%;
-  }
-  
-  .myntra div:nth-child(1) {
-    left:40px;
-    top:10px;
-    transform:rotate(20deg);
-    background:rgba(157,30,97,0.9);
-    animation: move1 5s ease-in 2s 1 alternate;
-  }
-  .myntra div:nth-child(2) {
-    left:102px;
-    top:10px;
-    transform:rotate(-20deg);
-    background:rgba(241,115,31,0.8);
-    animation: move2 5s ease-in 2s 1 alternate;
-  }
-  .myntra div:nth-child(3) {
-    left:158px;
-    top:10px;
-    transform:rotate(20deg);
-    background:rgba(241,115,31,0.9);
-    animation: move3 5s ease-in 2s 1 alternate;
-  }
-  .myntra div:nth-child(4) {
-    left:220px;
-    top:10px;
-    transform:rotate(-20deg);
-    background:rgba(253,0,206,0.9);
-    animation: move4 5s ease-in 2s 1 alternate;
-  }
-  
-  @keyframes move1 {
-     0%   {
-      left:40px;
-      transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
-    
-  }
-  @-webkit-keyframes move1 {
-     0%   {
-      left:40px;
-      -webkit-transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
-  }
-  
-  @keyframes move2 {
-     0%   {
-      left:102px;
-      transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
-  }
-  @-webkit-keyframes move2 {
-     0%   {
-      left:102px;
-      -webkit-transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
-  }
-  
-  @keyframes move3 {
-     0%   {
-      left:158px;
-      transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
-  }
-  @-webkit-keyframes move3 {
-     0%   {
-      left:158px;
-      -webkit-transform:rotate(20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
-  }
-  
-  @keyframes move4 {
-     0%   {
-      left:220px;
-      transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      transform:rotate(0deg);
-    }
-  }
-  @-webkit-keyframes move4 {
-     0%   {
-      left:220px;
-      -webkit-transform:rotate(-20deg);
-    }
-     50%  {
-      left:160px;
-      -webkit-transform:rotate(0deg);
-    }
-  }
-  
+}
+ 
   

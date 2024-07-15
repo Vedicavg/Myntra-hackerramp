@@ -18,8 +18,12 @@ const port =2000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 app.get("/",(req,res)=>{
+    res.render("home.ejs");
+});
+
+
+app.get("/recreate",(req,res)=>{
    res.render("index.ejs"); 
 });
 
